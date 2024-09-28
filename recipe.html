@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="recipe-page" id="recipe-page">
+        <header>
+          <h1 id="recipe-name">Recipe Name</h1>
+          <img id="recipe-image" src="alexandra-gorn-52jG7-FN22Y-unsplash.jpg" alt="Recipe Image">
+        </header>
+        <section id="ingredients">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>2 cups all-purpose flour</li>
+            <li>1 teaspoon salt</li>
+            <!-- Add more ingredients here -->
+          </ul>
+        </section>
+        <section id="instructions">
+          <h2>Cooking Instructions</h2>
+          <ol>
+            <li>Preheat oven to 375°F (190°C).</li>
+            <li>Mix flour, salt, and sugar in a bowl.</li>
+            <!-- Add more instructions here -->
+          </ol>
+        </section>
+        <section id="nutrition-facts">
+          <h2>Nutrition Facts</h2>
+          <table>
+            <tr>
+              <th>Calories</th>
+              <td>250</td>
+            </tr>
+            <tr>
+                <th>Total Fat</th>
+                <td>10g</td>
+              </tr>
+              <tr>
+                <th>Saturated Fat</th>
+                <td>2g</td>
+              </tr>
+              <tr>
+                <th>Cholesterol</th>
+                <td>10mg</td>
+              </tr>
+              <tr>
+                <th>Sodium</th>
+                <td>200mg</td>
+              </tr>
+              <tr>
+                <th>Total Carbohydrates</th>
+                <td>30g</td>
+              </tr>
+              <tr>
+                <th>Dietary Fiber</th>
+                <td>2g</td>
+              </tr>
+              <tr>
+                <th>Sugars</th>
+                <td>10g</td>
+              </tr>
+              <tr>
+                <th>Protein</th>
+                <td>5g</td>
+              </tr>
+        
+      
+</body> </table>
+</section>
+<section id="cooking-info">
+  <h2>Cooking Information</h2>
+  <p>Cooking Time: 30 minutes</p>
+  <p>Servings: 4-6 people</p>
+  <p>Difficulty Level: Easy</p>
+</section>
+<footer>
+  <p>&copy; 2023 Recipe Website</p>
+</footer>
+</div>
+
+
+
+
+<style>
+    .recipe-page {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+#recipe-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: slideIn 1s ease-in-out;
+}
+
+#recipe-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  animation: zoomIn 1s ease-in-out;
+}
+
+#ingredients, #instructions, #nutrition-facts, #cooking-info {
+  margin-top: 20px;
+  animation: fadeInUp 1s ease-in-out;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+#cooking-info p {
+  margin-bottom: 10px;
+}
+
+footer {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.5);
+    scale: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    scale: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+</style>
+</html>
